@@ -86,9 +86,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: www # The folder the action should deploy.
-          clean: true
-          single-commit: true
+        uses: actions/deploy-pages@v4
