@@ -12,8 +12,9 @@
         else if(localStorage.getItem("meek_theme")=="light"){document.getElementsByTagName("html")[0].attributes.getNamedItem("data-color-mode").value="light";}
     </script>
     
-<meta name="description" content="连接真实，连接过去">
-<title>海边的木子</title>
+<meta name="description" content="五马分尸一般的兴趣广泛">
+<title>五马分尸一般的兴趣广泛</title>
+
 
 </head>
 <style>
@@ -24,96 +25,61 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </style>
 
 <style>
-.avatar {transition: 0.8s;width:64px;height:64px;}
-.avatar:hover{transform: scale(1.15) rotate(360deg);}
-#header h1 a{color:inherit;text-decoration:none;vertical-align: bottom;font-size:40px;font-family:Monaco;margin-left:8px;}
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
 .title-right{display:flex;margin:auto 0 0 auto;}
-.title-right button{margin-right:8px;padding:16px;}
-.title-right .circle{padding: 14px 16px;}
-
-.SideNav{min-width: 360px;}
-.SideNav-icon{margin-right: 16px}
-.SideNav-item .Label{color: #fff;margin-left:8px;}
-.d-flex{min-width:0;}
-.listTitle{overflow:hidden;white-space:nowrap;text-overflow: ellipsis;max-width: 100%;}
-.listLabels{white-space:nowrap;}
-.listLabels object{max-height:16px;max-width:24px;}
-
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
 @media (max-width: 600px) {
     body {padding: 8px;}
-    .avatar {width:40px;height:40px;}
-    .blogTitle{display:none;}
-    #buttonRSS{display:none;}
-    .LabelTime{display:none;}
+    .postTitle{font-size:24px;}
 }
 </style>
 
 
+
+
 <body>
     <div id="header">
-<h1>
-    <img src="https://tg.oceanum.top/file/f899d4053446182fa63f2.png" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">海边的木子</a></h1>
+<h1 class="postTitle">五马分尸一般的兴趣广泛</h1>
 <div class="title-right">
-    <a href="https://blog.oceanum.top/tag.html"><button id="buttonSearch" class="btn btn-invisible circle" title="搜索">
-        <svg class="octicon" width="16" height="16" >
-            <path id="pathSearch" fill-rule="evenodd"></path>
+    
+    <a href="https://blog.oceanum.top"><button id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd" d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z"></path>
         </svg>
     </button></a>
-    <a href="https://blog.oceanum.top/about.html"><button class="btn btn-invisible circle" title="关于">
-        <svg class="octicon" width="16" height="16" >
-            <path id="关于" fill-rule="evenodd"></path>
+
+    
+    <a href="https://github.com/Wisof-Young/Wisof-Young.github.io/issues/4" target="_blank"><button class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
         </svg>
     </button></a>
-    <a href="https://blog.oceanum.top/rss.xml" target="_blank"><button id="buttonRSS" class="btn btn-invisible circle" title="RSS">
-        <svg class="octicon" width="16" height="16" >
-            <path id="pathRSS" fill-rule="evenodd"></path>
-        </svg>
-    </button></a>
-    <button class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
+    
+
+    <button class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
     </button>
+
 </div>
 </div>
     <div id="content">
-<div style="margin-bottom: 16px;">连接真实，连接过去</div>
-<nav class="SideNav border">
-<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/wu-ma-fen-shi-yi-ban-de-xing-qu-guang-fan.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">五马分尸一般的兴趣广泛</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#79751B"><object><a style="color:#fff" href="https://blog.oceanum.top/tag.html#走过漫漫长路">走过漫漫长路</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-02-16</span>
-    </div>
-</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/%E3%80%8A-tou-zi-zui-zhong-yao-de-shi-%E3%80%8B.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">《投资最重要的事》</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#39E143"><object><a style="color:#fff" href="https://blog.oceanum.top/tag.html#金融投资">金融投资</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-02-16</span>
-    </div>
-</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/gei-zi-ji-de-zhi-shu-ji-jin-tou-zi-shou-ce.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">给自己的指数基金投资手册</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#39E143"><object><a style="color:#fff" href="https://blog.oceanum.top/tag.html#金融投资">金融投资</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-02-16</span>
-    </div>
-</a>
-</nav>
+<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/da953f5aa51428fff0df5eb1bff7832c21383c535f2ee1ef574f4b83f6f64431/68747470733a2f2f6f6365616e756d2e6f73732d636e2d6368656e6764752e616c6979756e63732e636f6d2f696d6167652f31386166646535313162336364626661366237356265316565323537346332332e706e67"><img src="https://camo.githubusercontent.com/da953f5aa51428fff0df5eb1bff7832c21383c535f2ee1ef574f4b83f6f64431/68747470733a2f2f6f6365616e756d2e6f73732d636e2d6368656e6764752e616c6979756e63732e636f6d2f696d6167652f31386166646535313162336364626661366237356265316565323537346332332e706e67" alt="" data-canonical-src="https://oceanum.oss-cn-chengdu.aliyuncs.com/image/18afde511b3cdbfa6b75be1ee2574c23.png" style="max-width: 100%;"></a></p>
+<p>这是我在 RSS 阅读器里面订阅的竹白百科，它会每周一将上一周的竹白热门文章推送给我。每篇文章都属于不用领域，且一般篇幅较长。从开始订阅起，我从未把每周推送看完过。</p>
+<p>今天早起锻炼的时候，照例使用小宇宙。由于今天状态不佳，为了达到既定的锻炼目标，用时比平时更长，所以我也就听了 3 集节目。这 3 集节目里面，一集是在讲商业，一集是在讲饮食文化，还有一集是在谈论投资经历。对于节目中每一个我听见的新知识新观点，我总是会不断在脑中默念数遍，生怕忘记。听完三集节目，我只觉得比考完一场高考还要疲惫。</p>
+<p>总是听人说，当代互联网产品就是一种电子鸦片。短视频、短新闻不断用哗众取宠的内容轰击人的大脑，人在廉价而不断的多巴胺控制下失去自我控制力。我谨记教训，不刷短视频，不看短新闻，精心严格地筛选自己的信息来源，却陷入了无尽的焦虑之中。在我看来，这才是电子鸦片的更深层一面——让人处在害怕失去、害怕落后、害怕遗忘、害怕无功而返的焦虑之中。</p>
+<p>有时我觉得，我这一代人是可怜的。比起传统的黄赌毒，没有人告诉我们应该如何应对互联网世界。比起我们的父辈，我们需要在互联网里面讨生活，不能简单的和它一刀两断。互联网有时真像撒旦，满足一些东西，却又用一种隐蔽的方式夺走一些东西，最后把整个灵魂出卖给他。</p>
+<p>我一直以为，我是一个兴趣广泛、喜欢尝试新鲜事物的人。我知道了那么多领域，却无一所精。今晨，被汗涔涔的衬衫包裹着，耳边不断想起代表着理性与新知的声音，我突然无比想放过自己，我那所谓的兴趣广泛可能不过只是信息焦虑而已。这样的兴趣广泛让我就像在被五马分尸一样，处在极度撕裂之中。</p>
+<p>也许明天早上的锻炼，当我打开小宇宙的时候，我会点击《谐星聊天会》……</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://blog.oceanum.top"> 海边的木子 </a>
 <p>
@@ -166,19 +132,45 @@ console.log("\n %c Gmeek main %c https://github.com/Meekdai/Gmeek \n\n", "color:
 </script>
 
 <script>
-document.getElementById("pathSearch").setAttribute("d",IconList["search"]);
-document.getElementById("pathRSS").setAttribute("d",IconList["rss"]);
-iconTOP=document.getElementsByClassName("svgTop1");
-iconPost=document.getElementsByClassName("svgTop0");
-for(var i=0;i<iconTOP.length;i++){
-    iconTOP[i].setAttribute("d",IconList["upload"]);
-    iconTOP[i].parentNode.style.color="red";
-}
-for(var i=0;i<iconPost.length;i++){
-    iconPost[i].setAttribute("d",IconList["post"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","Wisof-Young/Wisof-Young.github.io");
+    script.setAttribute("issue-term","title");
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else{script.setAttribute("theme","github-light");}
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
 }
 
-document.getElementById("关于").setAttribute("d",value=IconList["about"]);
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
 </script>
+
+
+
 
 </html>
