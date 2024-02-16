@@ -5,7 +5,7 @@
     "homeUrl":"https://blog.oceanum.top",
     "avatarUrl":"https://meekdai.com/avatar.svg",
     "faviconUrl":"https://meekdai.com/favicon.svg",
-    "singlePage":["movies","books","about"],
+    "singlePage":["about"],
     "startSite":"01/10/2020",
     "onePageListNum":15,
     "commentLabelColor":"#006b75",
